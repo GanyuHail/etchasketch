@@ -1,0 +1,11 @@
+.cont {
+    display: inline-block;
+}
+
+.grid { 
+    border: 1px, black;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
