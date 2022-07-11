@@ -2,10 +2,11 @@
     display: inline-block;
 }
 
-.grid { 
-    border: 1px, black;
+#grid { 
     background-color: pink;
     height: 50px;
     width: 50px;
-    display: inline-block;
+    display: grid; 
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    gap: 20px;
 }
