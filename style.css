@@ -16,15 +16,16 @@ body {
 .controls {
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
 }
 
-.reset button {
-    background-color: #4CAF50; 
+.button {
+    background-color: black; 
+    font-family: 'Share Tech Mono', monospace;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
   }
