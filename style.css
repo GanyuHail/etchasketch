@@ -2,11 +2,20 @@
     display: inline-block;
 }
 
-#grid { 
-    background-color: pink;
-    height: 50px;
-    width: 50px;
-    display: grid; 
-    grid-template-columns: repeat(12, [col-start] 1fr);
-    gap: 20px;
+.grid{
+    margin-top: 50px;
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid white;
+    border-radius: 5px;
+    height: 575px;
+    width: 575px;
+    background-color:  pink;
+    box-shadow: 10px 10px;
+}
+
+.cell{
+    background-color: white;
+    border: 1px solid black;
 }
