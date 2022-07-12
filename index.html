@@ -10,21 +10,25 @@
 </head>
 
 <body>
-  <label for="gridNum">How big u r grid?? (16-100):</label>
-  <input type="number" placeholder="" id="gridNum" min="16" max="100">
-  <button type="button" id="gridGen" onclick="createGrid();">Grid Me</button>
-  <button type="button" id="reset" onclick="resetGrid()">Reset</button>
+  <h1>Etch-A-Sketch</h1>
+  <div class="controls">
+    <label for="gridNum">How big ur grid?? (16-100):</label>
+    <input type="number" placeholder="" id="gridNum" min="16" max="100">
+    <button type="button" id="gridGen" onclick="createGrid();">Grid Me</button>
+    <button type="button" id="reset" onclick="resetGrid()">Reset</button>
+  </div>
+  <br><br>
   <div class="grid"></div>
 
   <script>
 
-var grid = document.querySelector('.grid');
+    var grid = document.querySelector('.grid');
 
     function createGrid() {
-      
+      removeAllChildNodes(parent);
       var gridNum = document.getElementById("gridNum").valueAsNumber;
       grid.setAttribute('style', `grid-template-columns: repeat(${gridNum}, 2fr); grid-template-rows: repeat(${gridNum}, 2fr);`);
-      for (let i = 0; i < 256; i++) {
+      for (let i = 0; i < gridNum*gridNum; i++) {
         const div = document.createElement('div');
         div.classList.add('cell');
         div.addEventListener('mouseover', function (event) {

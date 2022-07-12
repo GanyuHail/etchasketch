@@ -1,19 +1,23 @@
-.cont {
-    display: inline-block;
+h1 {
+    text-align: center;
+}
+
+.controls{
+    text-align: center;
 }
 
 .grid{
+    justify-content: center;
     display: inline-grid;
     grid-template-columns: repeat(16, 2fr);
     grid-template-rows: repeat(16, 2fr);
     border: 1px solid black;
     border-radius: 1px;
-    height: 575px;
-    width: 575px;
-
+    height: 600px;
+    width: 600px;
 }
 
 .cell{
     background-color: hotpink;
-    border: 1px solid pink;
+    border: 0.5px solid pink;
 }
