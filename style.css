@@ -1,12 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap');
+
 h1 {
     text-align: center;
+    font-family: 'VT323', monospace;
+    letter-spacing: 1em;
 }
 
-.controls{
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controls {
     text-align: center;
+    font-family: 'Share Tech Mono', monospace;
 }
 
-.grid{
+.reset button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+.grid {
     justify-content: center;
     display: inline-grid;
     grid-template-columns: repeat(16, 2fr);
@@ -17,7 +40,7 @@ h1 {
     width: 600px;
 }
 
-.cell{
+.cell {
     background-color: hotpink;
     border: 0.5px solid pink;
 }

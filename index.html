@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  <h1>Etch-A-Sketch</h1>
+  <h1>Etch-🚀-Sketch</h1>
   <div class="controls">
-    <label for="gridNum">How big ur grid?? (16-100):</label>
-    <input type="number" placeholder="" id="gridNum" min="16" max="100">
+    <label for="gridNum">How big ur grid?? (12-100):</label>
+    <input type="number" placeholder="12" id="gridNum" min="12" max="100">
     <button type="button" id="gridGen" onclick="createGrid();">Grid Me</button>
     <button type="button" id="reset" onclick="resetGrid()">Reset</button>
   </div>
@@ -25,8 +25,9 @@
     var grid = document.querySelector('.grid');
 
     function createGrid() {
-      removeAllChildNodes(parent);
       var gridNum = document.getElementById("gridNum").valueAsNumber;
+      removeAllChildNodes(parent);
+      removeAllChildNodes(grid);
       grid.setAttribute('style', `grid-template-columns: repeat(${gridNum}, 2fr); grid-template-rows: repeat(${gridNum}, 2fr);`);
       for (let i = 0; i < gridNum*gridNum; i++) {
         const div = document.createElement('div');
